@@ -1,0 +1,107 @@
+{
+  "name": "eslint-config-pawover",
+  "description": "specific rules for ESLint",
+  "version": "0.0.0",
+  "author": "pawover<pawover@outlook.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "base.js",
+    "react.js",
+    "vue.js",
+    "typescript.js"
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslint-config-pawover",
+    "pawover"
+  ],
+  "homepage": "https://github.com/pawover/eslint-config-pawover.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pawover/eslint-config-pawover.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pawover/eslint-config-pawover/issues"
+  },
+  "packageManager": "pnpm@8.8.0",
+  "engines": {
+    "node": ">=v18.19.0",
+    "pnpm": ">=8.8.0"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build --base /",
+    "docs:preview": "vitepress preview",
+    "build": "ts-node scripts/build.ts",
+    "release": "pnpm build && pnpm publish --no-git-checks",
+    "type:check": "tsc --noEmit --skipLibCheck",
+    "clean:lib": "rimraf -g **/node_modules",
+    "lint": "pnpm lint:eslint && pnpm lint:prettier",
+    "lint:eslint": "eslint --ext \"**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue}\" --ignore-pattern \"bad.*\" .",
+    "lint:prettier": "prettier --write .",
+    "lib:up": "taze -I -r --exclude pnpm,typescript,vitepress"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/eslint-parser": "^7.23.10",
+    "@babel/preset-react": "^7.23.3",
+    "@types/eslint": "^8.56.2",
+    "@types/node": "^20.11.19",
+    "@types/prettier": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-vue": "^9.21.1",
+    "prettier": "^3.2.5",
+    "react": "^18.2.0",
+    "rimraf": "^5.0.5",
+    "taze": "^0.13.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.2",
+    "vitepress": "1.0.0-beta.7",
+    "vue": "^3.4.19",
+    "vue-eslint-parser": "^9.4.2"
+  },
+  "peerDependencies": {
+    "@babel/eslint-parser": "7.x",
+    "@babel/preset-react": "7.x",
+    "@typescript-eslint/eslint-plugin": ">=7.0.0",
+    "@typescript-eslint/parser": ">=7.0.0",
+    "eslint": ">=8.56.0",
+    "eslint-plugin-react": ">=7.33.0",
+    "eslint-plugin-vue": ">=9.21.0",
+    "typescript": ">=4.7.4",
+    "vue-eslint-parser": ">=9.4.0"
+  },
+  "peerDependenciesMeta": {
+    "@babel/eslint-parser": {
+      "optional": true
+    },
+    "@babel/preset-react": {
+      "optional": true
+    },
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-vue": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    },
+    "vue-eslint-parser": {
+      "optional": true
+    }
+  }
+}

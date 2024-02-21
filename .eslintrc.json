@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "extends": ["./index.js", "./typescript.js"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "@typescript-eslint/no-require-imports": ["off"],
+    "@typescript-eslint/no-unused-vars": ["off"],
+    "@typescript-eslint/no-explicit-any": ["off"]
+  }
+}
