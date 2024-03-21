@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-pawover",
   "description": "specific rules for ESLint",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "pawover<pawover@outlook.com>",
   "license": "MIT",
   "main": "index.js",
