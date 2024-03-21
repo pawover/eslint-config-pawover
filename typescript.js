@@ -147,6 +147,8 @@ module.exports = {
     "@typescript-eslint/no-base-to-string": "off",
     "@typescript-eslint/no-confusing-non-null-assertion": "off",
     "@typescript-eslint/no-confusing-void-expression": "off",
+    "no-dupe-class-members": "off",
+    "@typescript-eslint/no-dupe-class-members": "error",
     "@typescript-eslint/no-duplicate-enum-values": "error",
     "@typescript-eslint/no-duplicate-type-constituents": "off",
     "@typescript-eslint/no-dynamic-delete": "off",
