@@ -7,11 +7,11 @@
 ::: code-group
 
 ```shell [npm]
-npm install --save-dev eslint @babel/core @babel/eslint-parser eslint-config-pawover
+npm install --save-dev eslint eslint-config-pawover
 ```
 
 ```shell [pnpm]
-pnpm add --save-dev eslint @babel/core @babel/eslint-parser eslint-config-pawover
+pnpm add --save-dev eslint eslint-config-pawover
 ```
 
 :::

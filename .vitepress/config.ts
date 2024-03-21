@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import { AutoSidebar } from "../plugins/AutoSidebar";
+import { autoSidebar } from "../plugins/AutoSidebar";
 import { footer } from "./layout/footer";
 import { nav } from "./layout/nav";
 
@@ -21,6 +21,6 @@ export default defineConfig({
   vite: {
     server: { host: true },
     css: { devSourcemap: true },
-    plugins: [AutoSidebar({ root: "/rules" })],
+    plugins: [autoSidebar({ root: "/rules" }) as undefined],
   },
 });

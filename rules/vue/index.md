@@ -7,11 +7,11 @@
 ::: code-group
 
 ```shell [npm]
-npm install --save-dev eslint @babel/core @babel/eslint-parser vue-eslint-parser eslint-plugin-vue eslint-config-pawover
+npm install --save-dev eslint eslint-config-pawover
 ```
 
 ```shell [pnpm]
-pnpm add --save-dev eslint @babel/core @babel/eslint-parser vue-eslint-parser eslint-plugin-vue eslint-config-pawover
+pnpm add --save-dev eslint eslint-config-pawover
 ```
 
 :::
@@ -34,11 +34,11 @@ module.exports = {
 ::: code-group
 
 ```shell [npm]
-npm install --save-dev @babel/core @babel/eslint-parser @typescript-eslint/eslint-plugin @typescript-eslint/parser @vue/eslint-config-typescript eslint eslint-config-pawover eslint-plugin-vue vue-eslint-parser
+npm install --save-dev eslint typescript eslint-config-pawover
 ```
 
 ```shell [pnpm]
-pnpm add --save-dev @babel/core @babel/eslint-parser @typescript-eslint/eslint-plugin @typescript-eslint/parser @vue/eslint-config-typescript eslint eslint-config-pawover eslint-plugin-vue vue-eslint-parser
+pnpm add --save-dev eslint typescript eslint-config-pawover
 ```
 
 :::

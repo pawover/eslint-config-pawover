@@ -14,7 +14,6 @@ namespace Rules {
     extendedBaseRule?: string;
     /** 文档地址 */
     url: string;
-
     /** 示例文件后缀 */
     exampleExtension: ExampleExtension;
   }

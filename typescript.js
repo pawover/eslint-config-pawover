@@ -3,16 +3,16 @@
  * https://github.com/pawover/eslint-config-pawover.git
  *
  * 依赖版本：
- *   eslint ^8.56.0
- *   eslint-plugin-react ^7.33.2
- *   eslint-plugin-vue ^9.21.1
- *   @babel/core ^7.23.9
- *   @babel/eslint-parser ^7.23.10
- *   @babel/preset-react ^7.23.3
- *   vue-eslint-parser ^9.4.2
- *   @typescript-eslint/parser ^6.21.0
- *   @typescript-eslint/eslint-plugin ^6.21.0
- *   typescript ^5.2.2
+ *   eslint ^8.57.0
+ *   eslint-plugin-react undefined
+ *   eslint-plugin-vue undefined
+ *   @babel/core undefined
+ *   @babel/eslint-parser undefined
+ *   @babel/preset-react undefined
+ *   vue-eslint-parser undefined
+ *   @typescript-eslint/parser undefined
+ *   @typescript-eslint/eslint-plugin undefined
+ *   typescript ^5.4.3
  *
  * 此文件是由脚本 scripts/build.ts 自动生成
  */
@@ -21,7 +21,6 @@ module.exports = {
   plugins: ["@typescript-eslint"],
   rules: {
     "no-undef": "off",
-    "react/sort-comp": "off",
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": "error",
     "@typescript-eslint/await-thenable": "off",
@@ -42,12 +41,7 @@ module.exports = {
     ],
     "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     "@typescript-eslint/consistent-type-exports": "error",
-    "@typescript-eslint/consistent-type-imports": [
-      "error",
-      {
-        fixStyle: "inline-type-imports",
-      },
-    ],
+    "@typescript-eslint/consistent-type-imports": "error",
     "default-param-last": "off",
     "@typescript-eslint/default-param-last": "off",
     "dot-notation": "off",
@@ -57,8 +51,6 @@ module.exports = {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "init-declarations": "off",
     "@typescript-eslint/init-declarations": "off",
-    "lines-between-class-members": "off",
-    "@typescript-eslint/lines-between-class-members": "off",
     "@typescript-eslint/member-ordering": [
       "error",
       {
@@ -151,11 +143,10 @@ module.exports = {
     "@typescript-eslint/naming-convention": "off",
     "no-array-constructor": "off",
     "@typescript-eslint/no-array-constructor": "off",
+    "@typescript-eslint/no-array-delete": "error",
     "@typescript-eslint/no-base-to-string": "off",
     "@typescript-eslint/no-confusing-non-null-assertion": "off",
     "@typescript-eslint/no-confusing-void-expression": "off",
-    "no-dupe-class-members": "off",
-    "@typescript-eslint/no-dupe-class-members": "off",
     "@typescript-eslint/no-duplicate-enum-values": "error",
     "@typescript-eslint/no-duplicate-type-constituents": "off",
     "@typescript-eslint/no-dynamic-delete": "off",
@@ -182,8 +173,6 @@ module.exports = {
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-import-type-side-effects": "error",
     "@typescript-eslint/no-inferrable-types": "error",
-    "no-invalid-this": "off",
-    "@typescript-eslint/no-invalid-this": "off",
     "@typescript-eslint/no-invalid-void-type": "error",
     "no-loop-func": "off",
     "@typescript-eslint/no-loop-func": "off",
@@ -268,11 +257,12 @@ module.exports = {
     "@typescript-eslint/no-useless-empty-export": "off",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/non-nullable-type-assertion-style": "off",
-    "padding-line-between-statements": "off",
-    "@typescript-eslint/padding-line-between-statements": "off",
     "@typescript-eslint/parameter-properties": "off",
     "@typescript-eslint/prefer-as-const": "off",
+    "prefer-destructuring": "off",
+    "@typescript-eslint/prefer-destructuring": "off",
     "@typescript-eslint/prefer-enum-initializers": "off",
+    "@typescript-eslint/prefer-find": "error",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-includes": "off",
@@ -280,6 +270,8 @@ module.exports = {
     "@typescript-eslint/prefer-namespace-keyword": "error",
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "@typescript-eslint/prefer-optional-chain": "off",
+    "prefer-promise-reject-errors": "off",
+    "@typescript-eslint/prefer-promise-reject-errors": "error",
     "@typescript-eslint/prefer-readonly": "off",
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/prefer-reduce-type-parameter": "off",
@@ -319,5 +311,6 @@ module.exports = {
     ],
     "@typescript-eslint/unbound-method": "off",
     "@typescript-eslint/unified-signatures": "off",
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": "off",
   },
 };

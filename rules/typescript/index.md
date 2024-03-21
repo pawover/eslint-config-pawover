@@ -7,11 +7,11 @@
 ::: code-group
 
 ```shell [npm]
-npm install --save-dev eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-pawover
+npm install --save-dev eslint typescript eslint-config-pawover
 ```
 
 ```shell [pnpm]
-pnpm add --save-dev eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-pawover
+pnpm add --save-dev eslint typescript eslint-config-pawover
 ```
 
 :::

@@ -1,8 +1,8 @@
 module.exports = {
   rules: {
     /**
-     * 函数的参数禁止超过 3 个
+     * 限制函数的参数数量
      */
-    "max-params": ["error", 3],
+    "max-params": "off",
   },
 };

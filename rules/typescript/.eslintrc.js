@@ -4,6 +4,5 @@ module.exports = {
   plugins: ["@typescript-eslint"],
   rules: {
     "no-undef": "off",
-    "react/sort-comp": "off",
   },
 };

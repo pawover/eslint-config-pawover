@@ -2,9 +2,9 @@ import { readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
 import type { PluginOption } from "vite";
 import type { DefaultTheme } from "vitepress";
-import { type AutoSidebarOptions, type AutoSidebarUserOptions, resolveOptions } from "./options";
+import { resolveOptions, type AutoSidebarOptions, type AutoSidebarUserOptions } from "./options";
 
-export function AutoSidebar(userOptions: AutoSidebarUserOptions = {}): PluginOption {
+export function autoSidebar(userOptions: AutoSidebarUserOptions = {}): PluginOption {
   const options = resolveOptions(userOptions);
 
   return {
