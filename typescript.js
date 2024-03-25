@@ -273,7 +273,7 @@ module.exports = {
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "@typescript-eslint/prefer-optional-chain": "off",
     "prefer-promise-reject-errors": "off",
-    "@typescript-eslint/prefer-promise-reject-errors": "error",
+    "@typescript-eslint/prefer-promise-reject-errors": "off",
     "@typescript-eslint/prefer-readonly": "off",
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/prefer-reduce-type-parameter": "off",
