@@ -9,7 +9,7 @@ ESLint 规则
 ### 安装
 
 ```shell
-pnpm add -D eslint @babel/core @babel/eslint-parser eslint-config-pawover
+pnpm add -D eslint eslint-config-pawover
 ```
 
 ### 使用
@@ -25,7 +25,7 @@ module.exports = {
 ### 安装
 
 ```shell
-pnpm add --save-dev eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-pawover
+pnpm add --save-dev eslint typescript eslint-config-pawover
 ```
 
 ```js
@@ -46,7 +46,7 @@ module.exports = {
 ### 安装
 
 ```shell
-pnpm add --save-dev eslint @babel/core @babel/eslint-parser @babel/preset-react@latest eslint-plugin-react eslint-config-pawover
+pnpm add --save-dev eslint eslint-config-pawover
 ```
 
 ### 使用
@@ -63,7 +63,7 @@ module.exports = {
 ### 安装
 
 ```shell
-pnpm add --save-dev eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-config-pawover
+pnpm add --save-dev eslint typescript eslint-config-pawover
 ```
 
 ### 使用
@@ -84,7 +84,7 @@ module.exports = {
 ### 安装
 
 ```shell
-pnpm add --save-dev eslint @babel/core @babel/eslint-parser vue-eslint-parser eslint-plugin-vue eslint-config-pawover
+pnpm add --save-dev eslint eslint-config-pawover
 ```
 
 ### 使用
@@ -101,7 +101,7 @@ module.exports = {
 ### 安装
 
 ```shell
-pnpm add --save-dev @babel/core @babel/eslint-parser @typescript-eslint/eslint-plugin @typescript-eslint/parser @vue/eslint-config-typescript eslint eslint-config-pawover eslint-plugin-vue vue-eslint-parser
+pnpm add --save-dev eslint eslint-config-pawover
 
 ```
 
